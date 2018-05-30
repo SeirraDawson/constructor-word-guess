@@ -21,13 +21,13 @@ function Letter (actual) {
         }
         return '_';
     };
-    //   * A function that takes a character as an argument and checks it against the underlying character, updating the stored boolean value to true if it was guessed correctly
     this.checked = function (userGuess) {
         if (userGuess === this.actual) {
-            this.guessed = true;
+        //A function that takes a character as an argument and checks it against the underlying character, 
+        //updating the stored boolean value to true if it was guessed correctly
+        this.guessed = true;
         }
     }
 }
-
 
 module.exports = Letter;
